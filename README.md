@@ -1,4 +1,4 @@
-For our official documentation go here: http://www.kontagent.com/docs/api-libraries/php-wrapper/
+For our official documentation go here: http://www.kontagent.com/docs/api-libraries/actionscript-30-advanced/
 
 Overview
 -----------------

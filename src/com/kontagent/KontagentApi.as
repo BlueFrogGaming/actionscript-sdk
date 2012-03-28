@@ -1,6 +1,7 @@
 package com.kontagent 
 {
 	import com.kontagent.libs.adobe.crypto.MD5;
+	import com.kontagent.libs.adobe.crypto.Base;
 	import flash.events.Event;
 	import flash.net.URLLoaderDataFormat;
 	import flash.net.URLRequest;
@@ -11,7 +12,7 @@ package com.kontagent
 	
 	public class KontagentApi 
 	{	
-		private var sdkVersion:String = "as01";
+		private var sdkVersion:String = "as00";
 
 		private var baseApiUrl:String = "http://api.geo.kontagent.net/api/v1/";
 		private var baseTestServerUrl:String = "http://test-server.kontagent.com/api/v1/";
@@ -20,6 +21,9 @@ package com.kontagent
 		
 		private var useTestServer:Boolean = false;
 		private var validateParams:Boolean = false;
+
+		// this flag indicates whether a message has been sent yet
+		private var hasSentMessage:Boolean = false;
 		
 		/*
 		* Kontagent class constructor
@@ -40,8 +44,15 @@ package com.kontagent
 				this.validateParams = (optionalParams.validateParams) ? optionalParams.validateParams : false;
 			}
 		}
-		
-		/*{
+
+		private function base64Encode(data:String):String
+		{
+			var b64:Base64Encoder = new Base64Encoder();
+			b64.encode(data);
+			return b64.toString();
+		}
+
+		/*
 		* Sends an HTTP request by creating an <img> tag given a URL.
 		*
 		* @param {String} url The request URL
@@ -64,7 +75,7 @@ package com.kontagent
 			
 			// send the request
 			loader.load(request);
-		}`
+		}
 		
 		/*
 		* Sends the API message by creating an <img> tag.
@@ -77,7 +88,10 @@ package com.kontagent
 		private function sendMessage(messageType:String, params:Object, successCallback:Function = null, validationErrorCallback:Function = null):void
 		{
 			// tag the version of the library
-			//params.sdk = this.sdkVersion;
+			if (!this.hasSentMessage) {
+				params.sdk = this.sdkVersion;
+				this.hasSentMessage = true;
+			}
 
 			// validate all the parameters
 			if (this.validateParams == true) {

@@ -148,7 +148,7 @@ package com.kontagent
 		*
 		* @return {String} A unique tracking tag
 		*/
-		public function genUniqueTrackingTag():String sdkVersion
+		public function genUniqueTrackingTag():String
 		{
 			var tag:String = "" + this.getTimestamp() + Math.floor(Math.random()*10000);
 			tag = MD5.hash(tag);

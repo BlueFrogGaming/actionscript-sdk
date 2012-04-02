@@ -34,6 +34,11 @@ package com.kontagent.libs
 				return true;
 			}
 		}
+
+		private static function validateData(messageType:String, paramValue:String):Boolean 
+		{	
+			return true;
+		}
 		
 		private static function validateF(messageType:String, paramValue:String):Boolean
 		{

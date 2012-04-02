@@ -177,6 +177,7 @@ package com.kontagent
 		* @param {String} [optionalParams.subtype1] Subtype1 value (max 32 chars)
 		* @param {String} [optionalParams.subtype2] Subtype2 value (max 32 chars)
 		* @param {String} [optionalParams.subtype3] Subtype3 value (max 32 chars)
+		* @param {string} [optionalParams.data] Additional JSON-formatted data to associate with the message
 		* @param {Function} [successCallback] The callback function to execute once message has been sent successfully
 		* @param {Function(error:String)} [validationErrorCallback] The callback function to execute on validation failure 
 		*/
@@ -192,6 +193,7 @@ package com.kontagent
 				if (optionalParams.subtype1) { params.st1 = optionalParams.subtype1; }
 				if (optionalParams.subtype2) { params.st2 = optionalParams.subtype2; }
 				if (optionalParams.subtype3) { params.st3 = optionalParams.subtype3; }
+				if (optionalParams.data) { params.data = this.base64Encode(optionalParams.data); }
 			}
 			
 			return this.sendMessage("ins", params, successCallback, validationErrorCallback);
@@ -208,6 +210,7 @@ package com.kontagent
 		* @param {String} [optionalParams.subtype1] Subtype1 value (max 32 chars)
 		* @param {String} [optionalParams.subtype2] Subtype2 value (max 32 chars)
 		* @param {String} [optionalParams.subtype3] Subtype3 value (max 32 chars)
+		* @param {string} [optionalParams.data] Additional JSON-formatted data to associate with the message
 		* @param {Function} [successCallback] The callback function to execute once message has been sent successfully
 		* @param {Function(error:String)} [validationErrorCallback] The callback function to execute on validation failure 
 		*/
@@ -223,6 +226,7 @@ package com.kontagent
 				if (optionalParams.subtype1) { params.st1 = optionalParams.subtype1; }
 				if (optionalParams.subtype2) { params.st2 = optionalParams.subtype2; }
 				if (optionalParams.subtype3) { params.st3 = optionalParams.subtype3; }
+				if (optionalParams.data) { params.data = this.base64Encode(optionalParams.data); }
 			}
 			
 			return this.sendMessage("inr", params, successCallback, validationErrorCallback);
@@ -240,6 +244,7 @@ package com.kontagent
 		* @param {String} [optionalParams.subtype1] Subtype1 value (max 32 chars)
 		* @param {String} [optionalParams.subtype2] Subtype2 value (max 32 chars)
 		* @param {String} [optionalParams.subtype3] Subtype3 value (max 32 chars)
+		* @param {string} [optionalParams.data] Additional JSON-formatted data to associate with the message
 		* @param {Function} [successCallback] The callback function to execute once message has been sent successfully
 		* @param {Function(error:String)} [validationErrorCallback] The callback function to execute on validation failure 
 		*/
@@ -255,6 +260,7 @@ package com.kontagent
 				if (optionalParams.subtype1) { params.st1 = optionalParams.subtype1; }
 				if (optionalParams.subtype2) { params.st2 = optionalParams.subtype2; }
 				if (optionalParams.subtype3) { params.st3 = optionalParams.subtype3; }
+				if (optionalParams.data) { params.data = this.base64Encode(optionalParams.data); }
 			}
 			
 			return this.sendMessage("nts", params, successCallback, validationErrorCallback);
@@ -271,6 +277,7 @@ package com.kontagent
 		* @param {String} [optionalParams.subtype1] Subtype1 value (max 32 chars)
 		* @param {String} [optionalParams.subtype2] Subtype2 value (max 32 chars)
 		* @param {String} [optionalParams.subtype3] Subtype3 value (max 32 chars)
+		* @param {string} [optionalParams.data] Additional JSON-formatted data to associate with the message
 		* @param {Function} [successCallback] The callback function to execute once message has been sent successfully
 		* @param {Function(error:String)} [validationErrorCallback] The callback function to execute on validation failure 
 		*/
@@ -286,6 +293,7 @@ package com.kontagent
 				if (optionalParams.subtype1) { params.st1 = optionalParams.subtype1; }
 				if (optionalParams.subtype2) { params.st2 = optionalParams.subtype2; }
 				if (optionalParams.subtype3) { params.st3 = optionalParams.subtype3; }
+				if (optionalParams.data) { params.data = this.base64Encode(optionalParams.data); }
 			}
 			
 			return this.sendMessage("ntr", params, successCallback, validationErrorCallback);
@@ -303,6 +311,7 @@ package com.kontagent
 		* @param {String} [optionalParams.subtype1] Subtype1 value (max 32 chars)
 		* @param {String} [optionalParams.subtype2] Subtype2 value (max 32 chars)
 		* @param {String} [optionalParams.subtype3] Subtype3 value (max 32 chars)
+		* @param {string} [optionalParams.data] Additional JSON-formatted data to associate with the message
 		* @param {Function} [successCallback] The callback function to execute once message has been sent successfully
 		* @param {Function(error:String)} [validationErrorCallback] The callback function to execute on validation failure 
 		*/
@@ -318,6 +327,7 @@ package com.kontagent
 				if (optionalParams.subtype1) { params.st1 = optionalParams.subtype1; }
 				if (optionalParams.subtype2) { params.st2 = optionalParams.subtype2; }
 				if (optionalParams.subtype3) { params.st3 = optionalParams.subtype3; }
+				if (optionalParams.data) { params.data = this.base64Encode(optionalParams.data); }
 			}
 			
 			return this.sendMessage("nes", params, successCallback, validationErrorCallback);
@@ -334,6 +344,7 @@ package com.kontagent
 		* @param {String} [optionalParams.subtype1] Subtype1 value (max 32 chars)
 		* @param {String} [optionalParams.subtype2] Subtype2 value (max 32 chars)
 		* @param {String} [optionalParams.subtype3] Subtype3 value (max 32 chars)
+		* @param {string} [optionalParams.data] Additional JSON-formatted data to associate with the message
 		* @param {Function} [successCallback] The callback function to execute once message has been sent successfully
 		* @param {Function(error:String)} [validationErrorCallback] The callback function to execute on validation failure 
 		*/
@@ -349,6 +360,7 @@ package com.kontagent
 				if (optionalParams.subtype1) { params.st1 = optionalParams.subtype1; }	
 				if (optionalParams.subtype2) { params.st2 = optionalParams.subtype2; }
 				if (optionalParams.subtype3) { params.st3 = optionalParams.subtype3; }
+				if (optionalParams.data) { params.data = this.base64Encode(optionalParams.data); }
 			}
 			
 			return this.sendMessage("nei", params, successCallback, validationErrorCallback);
@@ -367,6 +379,7 @@ package com.kontagent
 		* @param {String} [optionalParams.subtype1] Subtype1 value (max 32 chars)
 		* @param {String} [optionalParams.subtype2] Subtype2 value (max 32 chars)
 		* @param {String} [optionalParams.subtype3] Subtype3 value (max 32 chars)
+		* @param {string} [optionalParams.data] Additional JSON-formatted data to associate with the message
 		* @param {Function} [successCallback] The callback function to execute once message has been sent successfully
 		* @param {Function(error:String)} [validationErrorCallback] The callback function to execute on validation failure 
 		*/
@@ -382,6 +395,7 @@ package com.kontagent
 				if (optionalParams.subtype1) { params.st1 = optionalParams.subtype1; }
 				if (optionalParams.subtype2) { params.st2 = optionalParams.subtype2; }
 				if (optionalParams.subtype3) { params.st3 = optionalParams.subtype3; }
+				if (optionalParams.data) { params.data = this.base64Encode(optionalParams.data); }
 			}
 			
 			return this.sendMessage("pst", params, successCallback, validationErrorCallback);
@@ -400,6 +414,7 @@ package com.kontagent
 		* @param {String} [optionalParams.subtype1] Subtype1 value (max 32 chars)
 		* @param {String} [optionalParams.subtype2] Subtype2 value (max 32 chars)
 		* @param {String} [optionalParams.subtype3] Subtype3 value (max 32 chars)
+		* @param {string} [optionalParams.data] Additional JSON-formatted data to associate with the message
 		* @param {Function} [successCallback] The callback function to execute once message has been sent successfully
 		* @param {Function(error:String)} [validationErrorCallback] The callback function to execute on validation failure 
 		*/
@@ -416,6 +431,7 @@ package com.kontagent
 				if (optionalParams.subtype1) { params.st1 = optionalParams.subtype1; }
 				if (optionalParams.subtype2) { params.st2 = optionalParams.subtype2; }
 				if (optionalParams.subtype3) { params.st3 = optionalParams.subtype3; }
+				if (optionalParams.data) { params.data = this.base64Encode(optionalParams.data); }
 			}
 			
 			return this.sendMessage("psr", params, successCallback, validationErrorCallback);
@@ -432,6 +448,7 @@ package com.kontagent
 		* @param {String} [optionalParams.subtype1] Subtype1 value (max 32 chars)
 		* @param {String} [optionalParams.subtype2] Subtype2 value (max 32 chars)
 		* @param {String} [optionalParams.subtype3] Subtype3 value (max 32 chars)
+		* @param {string} [optionalParams.data] Additional JSON-formatted data to associate with the message
 		* @param {Function} [successCallback] The callback function to execute once message has been sent successfully
 		* @param {Function(error:String)} [validationErrorCallback] The callback function to execute on validation failure 
 		*/
@@ -448,6 +465,7 @@ package com.kontagent
 				if (optionalParams.subtype1) { params.st1 = optionalParams.subtype1; }
 				if (optionalParams.subtype2) { params.st2 = optionalParams.subtype2; }
 				if (optionalParams.subtype3) { params.st3 = optionalParams.subtype3; }
+				if (optionalParams.data) { params.data = this.base64Encode(optionalParams.data); }
 			}
 			
 			return this.sendMessage("evt", params, successCallback, validationErrorCallback);
@@ -464,6 +482,7 @@ package com.kontagent
 		* @param {String} [optionalParams.shortUniqueTrackingTag] 8-digit hex string used to match 
 		*	ThirdPartyCommClicks->ApplicationAdded messages. 
 		*	See the genShortUniqueTrackingTag() helper method.
+		* @param {string} [optionalParams.data] Additional JSON-formatted data to associate with the message
 		* @param {Function} [successCallback] The callback function to execute once message has been sent successfully
 		* @param {Function(error:String)} [validationErrorCallback] The callback function to execute on validation failure 
 		*/
@@ -474,6 +493,7 @@ package com.kontagent
 			if (optionalParams) {
 				if (optionalParams.uniqueTrackingTag) { params.u = optionalParams.uniqueTrackingTag; }
 				if (optionalParams.shortUniqueTrackingTag) { params.su = optionalParams.shortUniqueTrackingTag; }
+				if (optionalParams.data) { params.data = this.base64Encode(optionalParams.data); }
 			}
 			
 			return this.sendMessage("apa", params, successCallback, validationErrorCallback);
@@ -483,13 +503,19 @@ package com.kontagent
 		* Sends an Application Removed message to Kontagent.
 		*
 		* @param {int} userId The UID of the removing user
+		* @param {Object} [optionalParams] An associative array containing paramName => value
+		* @param {string} [optionalParams.data] Additional JSON-formatted data to associate with the message
 		* @param {Function} [successCallback] The callback function to execute once message has been sent successfully
 		* @param {Function(error:String)} [validationErrorCallback] The callback function to execute on validation failure 
 		*/
-		public function trackApplicationRemoved(userId:int, successCallback:Function = null, validationErrorCallback:Function = null):void 
+		public function trackApplicationRemoved(userId:int, optionalParams:Object = null, successCallback:Function = null, validationErrorCallback:Function = null):void 
 		{
 			var params:Object = {s: userId};
-			
+
+			if (optionalParams) {
+				if (optionalParams.data) { params.data = this.base64Encode(optionalParams.data); }
+			}
+
 			return this.sendMessage("apr", params, successCallback, validationErrorCallback);
 		}
 		
@@ -504,6 +530,7 @@ package com.kontagent
 		* @param {String} [optionalParams.subtype1] Subtype1 value (max 32 chars)
 		* @param {String} [optionalParams.subtype2] Subtype2 value (max 32 chars)
 		* @param {String} [optionalParams.subtype3] Subtype3 value (max 32 chars)
+		* @param {string} [optionalParams.data] Additional JSON-formatted data to associate with the message
 		* @param {Function} [successCallback] The callback function to execute once message has been sent successfully
 		* @param {Function(error:String)} [validationErrorCallback] The callback function to execute on validation failure 
 		*/
@@ -520,6 +547,7 @@ package com.kontagent
 				if (optionalParams.subtype1) { params.st1 = optionalParams.subtype1; }
 				if (optionalParams.subtype2) { params.st2 = optionalParams.subtype2; }
 				if (optionalParams.subtype3) { params.st3 = optionalParams.subtype3; }
+				if (optionalParams.data) { params.data = this.base64Encode(optionalParams.data); }
 			}
 			
 			return this.sendMessage("ucc", params, successCallback, validationErrorCallback);
@@ -532,6 +560,7 @@ package com.kontagent
 		* @param {Object} [optionalParams] An associative array containing paramName => value
 		* @param {int} [optionalParams.ipAddress] The current users IP address
 		* @param {String} [optionalParams.pageAddress] The current page address (ex: index.html)
+		* @param {string} [optionalParams.data] Additional JSON-formatted data to associate with the message
 		* @param {Function} [successCallback] The callback function to execute once message has been sent successfully
 		* @param {Function(error:String)} [validationErrorCallback] The callback function to execute on validation failure 
 		*/
@@ -545,6 +574,7 @@ package com.kontagent
 			if (optionalParams) {
 				if (optionalParams.ipAddress) { params.ip = optionalParams.ipAddress; }
 				if (optionalParams.pageAddress) { params.u = optionalParams.pageAddress; }
+				if (optionalParams.data) { params.data = this.base64Encode(optionalParams.data); }
 			}
 			
 			return this.sendMessage("pgr", params, successCallback, validationErrorCallback);
@@ -559,6 +589,7 @@ package com.kontagent
 		* @param {String} [optionalParams.gender] The gender of the user (m,f,u)
 		* @param {String} [optionalParams.country] The 2-character country code of the user
 		* @param {int} [optionalParams.friendCount] The friend count of the user
+		* @param {string} [optionalParams.data] Additional JSON-formatted data to associate with the message
 		* @param {Function} [successCallback] The callback function to execute once message has been sent successfully
 		* @param {Function(error:String)} [validationErrorCallback] The callback function to execute on validation failure 
 		*/
@@ -571,6 +602,7 @@ package com.kontagent
 				if (optionalParams.gender) { params.g = optionalParams.gender; }
 				if (optionalParams.country) { params.lc = optionalParams.country.toUpperCase(); }
 				if (optionalParams.friendCount) { params.f = optionalParams.friendCount; }
+				if (optionalParams.data) { params.data = this.base64Encode(optionalParams.data); }
 			}
 			
 			return this.sendMessage("cpu", params, successCallback, validationErrorCallback);
@@ -584,6 +616,7 @@ package com.kontagent
 		* @param {int} [optionalParams.goalCount2] The amount to increment goal count 2 by
 		* @param {int} [optionalParams.goalCount3] The amount to increment goal count 3 by
 		* @param {int} [optionalParams.goalCount4] The amount to increment goal count 4 by
+		* @param {string} [optionalParams.data] Additional JSON-formatted data to associate with the message
 		* @param {Func`tion} [successCallback] The callback function to execute once message has been sent successfully
 		* @param {Function(error:String)} [validationErrorCallback] The callback function to execute on validation failure 
 		*/
@@ -596,6 +629,7 @@ package com.kontagent
 				if (optionalParams.goalCount2) { params.gc2 = optionalParams.goalCount2; }
 				if (optionalParams.goalCount3) { params.gc3 = optionalParams.goalCount3; }
 				if (optionalParams.goalCount4) { params.gc4 = optionalParams.goalCount4; }
+				if (optionalParams.data) { params.data = this.base64Encode(optionalParams.data); }
 			}
 			
 			return this.sendMessage("gci", params, successCallback, validationErrorCallback);
@@ -611,6 +645,7 @@ package com.kontagent
 		* @param {String} [optionalParams.subtype1] Subtype1 value (max 32 chars)
 		* @param {String} [optionalParams.subtype2] Subtype2 value (max 32 chars)
 		* @param {String} [optionalParams.subtype3] Subtype3 value (max 32 chars)
+		* @param {string} [optionalParams.data] Additional JSON-formatted data to associate with the message
 		* @param {Function} [successCallback] The callback function to execute once message has been sent successfully
 		* @param {Function(error:String)} [validationErrorCallback] The callback function to execute on validation failure 
 		*/
@@ -626,6 +661,7 @@ package com.kontagent
 				if (optionalParams.subtype1) { params.st1 = optionalParams.subtype1; }
 				if (optionalParams.subtype2) { params.st2 = optionalParams.subtype2; }
 				if (optionalParams.subtype3) { params.st3 = optionalParams.subtype3; }
+				if (optionalParams.data) { params.data = this.base64Encode(optionalParams.data); }
 			}
 			
 			return this.sendMessage("mtu", params, successCallback, validationErrorCallback);

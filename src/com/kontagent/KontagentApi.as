@@ -1,7 +1,7 @@
 package com.kontagent 
 {
 	import com.kontagent.libs.adobe.crypto.MD5;
-	import com.kontagent.libs.adobe.crypto.Base;
+	import com.kontagent.libs.adobe.crypto.Base64Encoder;
 	import flash.events.Event;
 	import flash.net.URLLoaderDataFormat;
 	import flash.net.URLRequest;

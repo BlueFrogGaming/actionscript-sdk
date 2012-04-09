@@ -196,6 +196,11 @@ package com.kontagent.libs
 			}
 		}
 		
+		private static function validateSdk(messageType:String, paramValue:String):Boolean
+		{
+			return true;
+		}
+		
 		private static function validateSt1(messageType:String, paramValue:String):Boolean 
 		{
 			// subtype1 param
